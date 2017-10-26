@@ -1,10 +1,10 @@
 FROM ubuntu:16.04
 
-# 必要なもの
+# require
 RUN apt update && \
   apt install -y wget make gcc iputils-ping net-tools
 
-# SoftEtherインストール
+# install SoftEther
 RUN mkdir -p /tmp/se && \
   cd /tmp/se && \
   wget http://jp.softether-download.com/files/softether/v4.22-9634-beta-2016.11.27-tree/Linux/SoftEther_VPN_Server/32bit_-_ARM_EABI/softether-vpnserver-v4.22-9634-beta-2016.11.27-linux-arm_eabi-32bit.tar.gz && \
